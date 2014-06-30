@@ -1,0 +1,28 @@
+{
+  "name": "dalicious",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec test/init test/*Spec.js test/**/*Spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "bluebird": "^2.0.7",
+    "lodash": "^2.4.1",
+    "mssql": "^0.5.4",
+    "pg.js": "^3.3.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gee-shell": "0.1.0-pre",
+    "gulp": "^3.7.0",
+    "mocha": "^1.20.0",
+    "underscore.string": "^2.3.3"
+  }
+}
