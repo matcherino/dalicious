@@ -1,5 +1,5 @@
 'use strict';
-var pg = require('pg.js');
+var pg = require('pg');
 var Runner = require('../lib/runner');
 var async = require('async');
 var Schema = require('./schema');
@@ -16,6 +16,7 @@ var logError = function(err) {
 // table Data Access Object (DAO).
 exports.define = function defineStore(config) {
   var _connectionString = utils.buildConnectionString(config);
+  console.log('_connectionSTring', _connectionString);
   var _batchSeparator = config.batchSeparator;
   if (_batchSeparator &&  typeof _batchSeparator === 'string') {
     _batchSeparator = new RegExp('^' + _batchSeparator, 'gim');

@@ -1,7 +1,7 @@
 {
   "development": {
     "postgresql": {
-      "host": "localhost",
+      "host": "127.0.0.1",
       "database": "test_development",
       "user": "test",
       "password": "development",
@@ -11,7 +11,7 @@
   },
   "test": {
     "postgresql": {
-      "host": "localhost",
+      "host": "127.0.0.1",
       "database": "test_test",
       "user": "undefined",
       "password": "!test"
@@ -19,7 +19,7 @@
   },
   "production": {
     "postgresql": {
-      "host": "localhost",
+      "host": "127.0.0.1",
       "database": "test_production",
       "user": "test",
       "password": "!production"

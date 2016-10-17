@@ -7,22 +7,21 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R spec test/**/*Spec.js"
+    "test": "mocha -R spec test/**/*Spec.js",
+    "createdb": "mygrate createdb --directory test/postgres"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^0.9.2",
-    "bluebird": "^2.10.2",
-    "lodash": "^2.4.2",
-    "mssql": "^0.5.5",
-    "pg.js": "^3.6.2"
+    "async": "^2.1.2",
+    "bluebird": "^3.4.6",
+    "chai": "^3.5.0",
+    "lodash": "^4.16.4",
+    "pg": "^6.1.0",
+    "underscore.string": "^3.3.4"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
-    "gee-shell": "0.1.0-pre",
-    "gulp": "^3.9.0",
-    "mocha": "^1.21.5",
-    "underscore.string": "^2.4.0"
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
   }
 }

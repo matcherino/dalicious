@@ -21,7 +21,7 @@ Schema.getTableSchema = function(store, table, cb) {
     if (err) return cb(err);
     if (rows.length === 0) return cb('Could not get table schema. Check spelling: ' + table);
     result._dbSchema = rows;
-    result.columns = _.pluck(rows, 'column_name');
+    result.columns = _.map(rows, 'column_name');
     result.escapedColumns = {};
     result.columns.forEach(function(column) {
       result.escapedColumns[column] = Schema.escapeIdentifier(column);
